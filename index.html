@@ -282,10 +282,13 @@
     }
 
     .section-heading {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 800;
       color: #17375e;
-      margin: 18px 0 12px;
+      margin: 14px 0 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     .question-card {
@@ -294,6 +297,17 @@
       padding: 18px 20px;
       margin-bottom: 14px;
       box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+    }
+
+    .cloze-context {
+      background: #f1f5f9;
+      border-left: 4px solid #2b7de9;
+      padding: 12px 14px;
+      border-radius: 8px;
+      font-size: 14.5px;
+      line-height: 1.7;
+      color: #334155;
+      margin-bottom: 12px;
     }
 
     .question-title {
@@ -343,18 +357,6 @@
       border-color: #dc2626;
       background: #fee2e2;
       color: #b91c1c;
-    }
-
-    .cloze-passage {
-      background: #ffffff;
-      border-left: 5px solid #2b7de9;
-      padding: 16px 20px;
-      border-radius: 12px;
-      line-height: 1.85;
-      color: #1e293b;
-      margin-bottom: 16px;
-      font-size: 16px;
-      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
     }
 
     /* 配對連連看區塊 */
@@ -506,8 +508,11 @@
   </div>
 
   <script>
+    const PART1_SAMPLE_SIZE = 10; // 第一大題每次隨機抽取題數
+
     let currentBookData = null;
     let currentTab = 'part1';
+    let sampledPart1Questions = [];
     let userAnswers = {};
     let isSubmitted = false;
 
@@ -531,6 +536,46 @@
       switchView('select-view');
     }
 
+    // 洗牌函數 (Fisher-Yates)
+    function shuffleArray(arr) {
+      const copy = [...arr];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
+    // 從題庫中隨機抽取 10 題
+    function samplePart1Questions() {
+      const { singleChoice = [], cloze } = currentBookData.part1_review;
+      const pool = [];
+
+      singleChoice.forEach(item => {
+        pool.push({
+          id: item.id,
+          question: item.question,
+          options: item.options,
+          answer: item.answer,
+          passage: null
+        });
+      });
+
+      if (cloze && Array.isArray(cloze.questions)) {
+        cloze.questions.forEach(item => {
+          pool.push({
+            id: item.id,
+            question: `克漏字第 (${item.blankNumber}) 格：請選出最適合填入短文 (${item.blankNumber})_____ 的答案`,
+            options: item.options,
+            answer: item.answer,
+            passage: cloze.passage
+          });
+        });
+      }
+
+      sampledPart1Questions = shuffleArray(pool).slice(0, PART1_SAMPLE_SIZE);
+    }
+
     // 直接讀取同資料夾下的 book1.json、book2.json、book3.json
     async function openBook(bookId) {
       switchView('quiz-view');
@@ -546,6 +591,7 @@
         userAnswers = {};
         isSubmitted = false;
         currentLevelIndex = 0;
+        samplePart1Questions();
 
         renderQuizUI();
       } catch (err) {
@@ -589,15 +635,22 @@
       renderQuizUI();
     }
 
-    // 第一大題：Review 選擇 + 克漏字
+    // 第一大題：隨機 10 題測驗
     function renderPart1() {
       const tabBody = document.getElementById('tab-body');
-      const { singleChoice, cloze } = currentBookData.part1_review;
+      const totalQ = sampledPart1Questions.length;
 
-      let html = `<div class="section-heading">一、單選題</div>`;
-      singleChoice.forEach((item, idx) => {
+      let html = `
+        <div class="section-heading">
+          <span>隨機抽題測驗（共 ${totalQ} 題）</span>
+          <span style="font-size:14px; color:#64748b;">每次重新測驗將隨機更換題目</span>
+        </div>
+      `;
+
+      sampledPart1Questions.forEach((item, idx) => {
         html += `
           <div class="question-card">
+            ${item.passage ? `<div class="cloze-context">${item.passage}</div>` : ''}
             <div class="question-title">${idx + 1}. ${item.question}</div>
             <div class="option-list">
               ${item.options.map((opt, optIdx) => {
@@ -616,38 +669,12 @@
         `;
       });
 
-      html += `
-        <div class="section-heading">二、克漏字測驗</div>
-        <div class="cloze-passage">${cloze.passage}</div>
-      `;
-
-      cloze.questions.forEach((item) => {
-        html += `
-          <div class="question-card">
-            <div class="question-title">第 (${item.blankNumber}) 格</div>
-            <div class="option-list">
-              ${item.options.map((opt, optIdx) => {
-                let cls = 'option-btn';
-                if (userAnswers[item.id] === optIdx) cls += ' selected';
-                if (isSubmitted) {
-                  if (optIdx === item.answer) cls += ' correct';
-                  else if (userAnswers[item.id] === optIdx) cls += ' wrong';
-                }
-                return `<button class="${cls}" onclick="selectOption('${item.id}', ${optIdx})">
-                  ${String.fromCharCode(65 + optIdx)}. ${opt}
-                </button>`;
-              }).join('')}
-            </div>
-          </div>
-        `;
-      });
-
-      const totalQ = singleChoice.length + cloze.questions.length;
       let scoreHtml = '';
       if (isSubmitted) {
         let correctCount = 0;
-        singleChoice.forEach(q => { if (userAnswers[q.id] === q.answer) correctCount++; });
-        cloze.questions.forEach(q => { if (userAnswers[q.id] === q.answer) correctCount++; });
+        sampledPart1Questions.forEach(q => {
+          if (userAnswers[q.id] === q.answer) correctCount++;
+        });
         scoreHtml = `<p style="text-align:center; font-size:18px; font-weight:800; color:#16a34a; margin-top:16px;">
           測驗完成！答對 ${correctCount} / ${totalQ} 題
         </p>`;
@@ -658,7 +685,7 @@
         <div class="action-bar">
           ${!isSubmitted
             ? `<button class="primary-btn" onclick="submitPart1()">送出答案</button>`
-            : `<button class="primary-btn" onclick="resetPart1()">重新測驗</button>`}
+            : `<button class="primary-btn" onclick="resetPart1()">重新抽題測驗</button>`}
         </div>
       `;
 
@@ -679,7 +706,9 @@
     function resetPart1() {
       userAnswers = {};
       isSubmitted = false;
+      samplePart1Questions(); // 重新隨機抽 10 題
       renderPart1();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     // 第二大題：配對連連看
@@ -693,9 +722,9 @@
       matchedCount = 0;
 
       const leftItems = levelData.pairs.map((p, idx) => ({ text: p.left, pairId: idx }));
-      const rightItems = levelData.pairs
-        .map((p, idx) => ({ text: p.right, pairId: idx }))
-        .sort(() => Math.random() - 0.5);
+      const rightItems = shuffleArray(
+        levelData.pairs.map((p, idx) => ({ text: p.right, pairId: idx }))
+      );
 
       tabBody.innerHTML = `
         <div class="question-card">
