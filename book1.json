@@ -1,0 +1,223 @@
+{
+  "bookId": 1,
+  "title": "Book 1",
+  "part1_review": {
+    "title": "第一大題：文法綜合測驗 (Review)",
+    "singleChoice": [
+      {
+        "id": "b1_r_1",
+        "question": "A: Where is Dad?  B: _____ in the park.",
+        "options": ["He", "She", "He's"],
+        "answer": 2
+      },
+      {
+        "id": "b1_r_2",
+        "question": "_____ cookies are for you and your brother.",
+        "options": ["This", "That", "Those"],
+        "answer": 2
+      },
+      {
+        "id": "b1_r_3",
+        "question": "A: Are there oranges in the box?  B: Yes, _____.",
+        "options": ["there are", "they are", "there aren't"],
+        "answer": 0
+      },
+      {
+        "id": "b1_r_4",
+        "question": "A: _____ I your friend?  B: Yes, you _____.",
+        "options": ["Are; am", "Am; are", "Am; is"],
+        "answer": 1
+      },
+      {
+        "id": "b1_r_5",
+        "question": "There is _____ old house near the park.",
+        "options": ["the", "a", "an"],
+        "answer": 2
+      },
+      {
+        "id": "b1_r_6",
+        "question": "There's _____ soup in the bowl. _____ soup is for you.",
+        "options": ["a; A", "the; The", "X; The"],
+        "answer": 2
+      },
+      {
+        "id": "b1_r_7",
+        "question": "There is a big tree _____ the school and the park.",
+        "options": ["in", "between", "under"],
+        "answer": 1
+      },
+      {
+        "id": "b1_r_8",
+        "question": "A: _____ is that man?  B: He's our new teacher, Mr. Bonds.",
+        "options": ["Who", "What", "Where"],
+        "answer": 0
+      },
+      {
+        "id": "b1_r_9",
+        "question": "A: How many _____ are there on the farm?  B: There are twelve.",
+        "options": ["pig", "animals", "wolf"],
+        "answer": 1
+      },
+      {
+        "id": "b1_r_10",
+        "question": "I need two _____ and ten _____ for the pie.",
+        "options": ["peach; strawberry", "peachs; strawberrys", "peaches; strawberries"],
+        "answer": 2
+      },
+      {
+        "id": "b1_r_11",
+        "question": "A: Are _____ your dolls?  B: Yes, _____ are.",
+        "options": ["this; it", "these; they", "those; you"],
+        "answer": 1
+      },
+      {
+        "id": "b1_r_12",
+        "question": "I eat _____ egg and _____ milk for breakfast every day.",
+        "options": ["an; a", "a; an", "an; X"],
+        "answer": 2
+      },
+      {
+        "id": "b1_r_13",
+        "question": "It is an _____ house. It's not new.",
+        "options": ["new", "big", "old"],
+        "answer": 2
+      },
+      {
+        "id": "b1_r_14",
+        "question": "A: _____ is my eraser?  B: It's under your book.",
+        "options": ["Where", "What", "How"],
+        "answer": 0
+      },
+      {
+        "id": "b1_r_15",
+        "question": "A: Is there a big bad wolf in this story?  B: Yes, _____.",
+        "options": ["there is", "there's", "it is"],
+        "answer": 0
+      },
+      {
+        "id": "b1_r_16",
+        "question": "Are you okay? _____ eyes are red.",
+        "options": ["You're", "You", "Your"],
+        "answer": 2
+      },
+      {
+        "id": "b1_r_17",
+        "question": "Jenny and I aren't eight years old. _____ are ten.",
+        "options": ["We", "You", "They"],
+        "answer": 0
+      },
+      {
+        "id": "b1_r_18",
+        "question": "My _____ car is big and new.",
+        "options": ["dad's", "dad", "dad is"],
+        "answer": 0
+      },
+      {
+        "id": "b1_r_19",
+        "question": "This is Jack and this is _____ sister, Jane.",
+        "options": ["he's", "his", "he"],
+        "answer": 1
+      }
+    ],
+    "cloze": {
+      "passage": "Easter is coming. We (1)_____ Easter bunnies. We hide Easter eggs everywhere. There is (2)_____ orange egg under the bag. There (3)_____ four eggs in the small box. There are three green eggs (4)_____ the ball and the doll. There are two chocolate eggs in my bag. (5)_____ my favorite eggs! Can the children find them all? Happy Easter!",
+      "questions": [
+        {
+          "id": "b1_c_1",
+          "blankNumber": 1,
+          "options": ["am", "are", "is"],
+          "answer": 1
+        },
+        {
+          "id": "b1_c_2",
+          "blankNumber": 2,
+          "options": ["no", "a", "an"],
+          "answer": 2
+        },
+        {
+          "id": "b1_c_3",
+          "blankNumber": 3,
+          "options": ["is", "am", "are"],
+          "answer": 2
+        },
+        {
+          "id": "b1_c_4",
+          "blankNumber": 4,
+          "options": ["in", "between", "on"],
+          "answer": 1
+        },
+        {
+          "id": "b1_c_5",
+          "blankNumber": 5,
+          "options": ["They're", "There are", "It's"],
+          "answer": 0
+        }
+      ]
+    }
+  },
+  "part2_matching": {
+    "title": "第二大題：句型與文法配對連連看",
+    "levels": [
+      {
+        "level": 1,
+        "topic": "人稱代名詞替換",
+        "pairs": [
+          { "left": "My name is Lucy.", "right": "I am Lucy." },
+          { "left": "The elephants are big.", "right": "They are big." },
+          { "left": "Lily is in the park.", "right": "She is in the park." },
+          { "left": "My sister and I are at home.", "right": "We are at home." }
+        ]
+      },
+      {
+        "level": 2,
+        "topic": "Be 動詞疑問句與簡答",
+        "pairs": [
+          { "left": "Are frogs big?", "right": "No, they are not." },
+          { "left": "Is your dad a teacher?", "right": "Yes, he is." },
+          { "left": "Is that a small park?", "right": "No, it is not." },
+          { "left": "Am I your friend?", "right": "Yes, you are." }
+        ]
+      },
+      {
+        "level": 3,
+        "topic": "名詞單數與複數變化",
+        "pairs": [
+          { "left": "one baby", "right": "three babies" },
+          { "left": "one wolf", "right": "two wolves" },
+          { "left": "one tooth", "right": "eight teeth" },
+          { "left": "one knife", "right": "five knives" }
+        ]
+      },
+      {
+        "level": 4,
+        "topic": "Wh- 疑問句與答句配對",
+        "pairs": [
+          { "left": "How is your grandma?", "right": "She's fine." },
+          { "left": "What are those?", "right": "They are ants." },
+          { "left": "Who is that boy?", "right": "He's my brother." },
+          { "left": "Where is your school?", "right": "It's near the park." }
+        ]
+      },
+      {
+        "level": 5,
+        "topic": "Can 能力與一般現在式",
+        "pairs": [
+          { "left": "Can dogs fly?", "right": "No, they can't." },
+          { "left": "Can Billy play basketball?", "right": "Yes, he can." },
+          { "left": "Sandy likes flowers.", "right": "She doesn't like insects." },
+          { "left": "The monkey eats bananas.", "right": "It doesn't eat hot dogs." }
+        ]
+      },
+      {
+        "level": 6,
+        "topic": "所有格與名詞分類",
+        "pairs": [
+          { "left": "Look at that rabbit.", "right": "Its eyes are red." },
+          { "left": "This is my best friend.", "right": "Her name is Lucy." },
+          { "left": "an apple / an eraser", "right": "Singular countable nouns" },
+          { "left": "juice / water / bread", "right": "Uncountable nouns" }
+        ]
+      }
+    ]
+  }
+}
