@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
       background: linear-gradient(135deg, #e8d5c4 0%, #dce7f3 35%, #d6e4f0 68%, #ebd5dd 100%);
       padding: 20px;
       color: #1e293b;
@@ -42,7 +42,7 @@
       overflow-y: auto;
     }
 
-    /* 標題區塊 */
+    /* 标题区块 */
     .header-box {
       display: flex;
       align-items: center;
@@ -100,7 +100,7 @@
       display: flex;
     }
 
-    /* 主頁 3 本純色書本樣式 */
+    /* 主页 3 本纯色书本样式 */
     .books-stage {
       display: flex;
       align-items: center;
@@ -156,7 +156,7 @@
       box-shadow: 0 18px 32px rgba(15, 23, 42, 0.2);
     }
 
-    /* 通用白底膠囊按鈕 */
+    /* 通用白底胶囊按钮 */
     .pill-btn {
       background: #ffffff;
       color: #1e293b;
@@ -177,7 +177,7 @@
       border-color: #cbd5e1;
     }
 
-    /* 第二頁：選書卡片 */
+    /* 第二页：选书卡片 */
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -234,7 +234,7 @@
       font-weight: 900;
     }
 
-    /* 題庫頁面樣式 */
+    /* 题库页面样式 */
     .quiz-wrapper {
       width: 100%;
       max-width: 780px;
@@ -281,7 +281,7 @@
       color: #ffffff;
     }
 
-    /* 單題進度條 */
+    /* 单题进度条 */
     .progress-header {
       display: flex;
       justify-content: space-between;
@@ -393,7 +393,7 @@
       color: #b91c1c;
     }
 
-    /* 配對連連看區塊 */
+    /* 配对连连看区块 */
     .matching-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -539,7 +539,7 @@
 </head>
 <body>
   <div class="board">
-    <!-- 頂部固定標題 -->
+    <!-- 顶部固定标题 -->
     <header class="header-box">
       <div class="paren">(</div>
       <div class="title-group">
@@ -550,7 +550,7 @@
       <div class="paren">)</div>
     </header>
 
-    <!-- 畫面 1：主頁 -->
+    <!-- 画面 1：主页 -->
     <main id="home-view" class="view active">
       <div class="books-stage">
         <div class="book-cover b1" onclick="goToSelect()">
@@ -566,7 +566,7 @@
       <button class="pill-btn" onclick="goToSelect()">START</button>
     </main>
 
-    <!-- 畫面 2：選書目錄 -->
+    <!-- 画面 2：选书目录 -->
     <section id="select-view" class="view">
       <div class="cards-grid">
         <div class="book-card b1" onclick="openBook(1)">
@@ -579,18 +579,18 @@
           <div class="card-title">Book 3</div>
         </div>
       </div>
-      <button class="pill-btn" onclick="goToHome()">← 回到主頁</button>
+      <button class="pill-btn" onclick="goToHome()">← 回到主页</button>
     </section>
 
-    <!-- 畫面 3：題庫練習頁 -->
+    <!-- 画面 3：题库练习页 -->
     <section id="quiz-view" class="view">
       <div id="quiz-content" style="width: 100%; display: flex; flex-direction: column; align-items: center;"></div>
-      <button class="pill-btn" style="margin-top: 16px;" onclick="goToSelect()">← 返回選書</button>
+      <button class="pill-btn" style="margin-top: 16px;" onclick="goToSelect()">← 返回选书</button>
     </section>
   </div>
 
   <script>
-    const PART1_SAMPLE_SIZE = 10; // 第一大題每次隨機抽取題數
+    const PART1_SAMPLE_SIZE = 10; // 第一大题每次随机抽取题数
 
     let currentBookData = null;
     let currentTab = 'part1';
@@ -599,7 +599,7 @@
     let userAnswers = {};
     let showPart1Summary = false;
 
-    // 配對題狀態
+    // 配对题状态
     let currentLevelIndex = 0;
     let selectedLeft = null;
     let selectedRight = null;
@@ -619,7 +619,7 @@
       switchView('select-view');
     }
 
-    // 洗牌函數 (Fisher-Yates)
+    // 洗牌函数 (Fisher-Yates)
     function shuffleArray(arr) {
       const copy = [...arr];
       for (let i = copy.length - 1; i > 0; i--) {
@@ -629,7 +629,7 @@
       return copy;
     }
 
-    // 從題庫中隨機抽取 10 題
+    // 从题库中随机抽取 10 题
     function samplePart1Questions() {
       const { singleChoice = [], cloze } = currentBookData.part1_review;
       const pool = [];
@@ -648,7 +648,7 @@
         cloze.questions.forEach(item => {
           pool.push({
             id: item.id,
-            question: `克漏字第 (${item.blankNumber}) 格：請選出最適合填入短文 (${item.blankNumber})_____ 的答案`,
+            question: `完形填空第 (${item.blankNumber}) 空：请选出最适合填入短文 (${item.blankNumber})_____ 的答案`,
             options: item.options,
             answer: item.answer,
             passage: cloze.passage
@@ -662,11 +662,11 @@
       showPart1Summary = false;
     }
 
-    // 直接讀取同資料夾下的 book1.json、book2.json、book3.json
+    // 直接读取同文件夹下的 book1.json、book2.json、book3.json
     async function openBook(bookId) {
       switchView('quiz-view');
       const quizContainer = document.getElementById('quiz-content');
-      quizContainer.innerHTML = `<div class="placeholder-box"><p style="color:#64748b; font-weight:700;">載入題庫中...</p></div>`;
+      quizContainer.innerHTML = `<div class="placeholder-box"><p style="color:#64748b; font-weight:700;">正在加载题库...</p></div>`;
 
       try {
         const response = await fetch(`./book${bookId}.json`);
@@ -682,7 +682,7 @@
         quizContainer.innerHTML = `
           <div class="placeholder-box">
             <h2 style="color:#17375e; font-size:28px; margin-bottom:12px;">Book ${bookId}</h2>
-            <p style="font-size:18px; color:#64748b; font-weight:700;">題庫還在製作中</p>
+            <p style="font-size:18px; color:#64748b; font-weight:700;">题库还在制作中</p>
           </div>
         `;
       }
@@ -719,12 +719,12 @@
       renderQuizUI();
     }
 
-    // 第一大題：一題一題作答模式
+    // 第一大题：一题一题作答模式
     function renderPart1() {
       const tabBody = document.getElementById('tab-body');
       const totalQ = sampledPart1Questions.length;
 
-      // 結算畫面
+      // 结算画面
       if (showPart1Summary) {
         let correctCount = 0;
         sampledPart1Questions.forEach(q => {
@@ -735,13 +735,13 @@
           <div class="summary-box">
             <div class="score-circle">
               <span style="font-size:32px; font-weight:900; line-height:1;">${correctCount} / ${totalQ}</span>
-              <span style="font-size:13px; font-weight:700; margin-top:4px;">答對題數</span>
+              <span style="font-size:13px; font-weight:700; margin-top:4px;">答对题数</span>
             </div>
-            <h3 style="font-size:22px; color:#17375e; margin-bottom:8px;">測驗完成！</h3>
-            <p style="color:#64748b; margin-bottom:24px;">你可以重新隨機抽取 10 題再練習一次，或切換到第二大題進行配對挑戰。</p>
+            <h3 style="font-size:22px; color:#17375e; margin-bottom:8px;">测验完成！</h3>
+            <p style="color:#64748b; margin-bottom:24px;">你可以重新随机抽取 10 题再练习一次，或切换到第二大题进行配对挑战。</p>
             <div class="action-bar center">
-              <button class="secondary-btn" onclick="reviewPart1Answers()">回顧作答紀錄</button>
-              <button class="primary-btn" onclick="resetPart1()">重新抽題測驗</button>
+              <button class="secondary-btn" onclick="reviewPart1Answers()">回顾作答记录</button>
+              <button class="primary-btn" onclick="resetPart1()">重新抽题测验</button>
             </div>
           </div>
         `;
@@ -756,17 +756,17 @@
       let feedbackHtml = '';
       if (hasAnswered) {
         if (chosenOpt === item.answer) {
-          feedbackHtml = `<div class="feedback-msg ok">✓ 答對了！太棒了！</div>`;
+          feedbackHtml = `<div class="feedback-msg ok">✓ 答对了！太棒了！</div>`;
         } else {
           const correctLetter = String.fromCharCode(65 + item.answer);
-          feedbackHtml = `<div class="feedback-msg err">✕ 答錯了，正確答案是 ${correctLetter}. ${item.options[item.answer]}</div>`;
+          feedbackHtml = `<div class="feedback-msg err">✕ 答错了，正确答案是 ${correctLetter}. ${item.options[item.answer]}</div>`;
         }
       }
 
       tabBody.innerHTML = `
         <div class="progress-header">
-          <span>第 ${currentQuestionIndex + 1} / ${totalQ} 題</span>
-          <span style="color:#64748b; font-size:13.5px;">已作答 ${Object.keys(userAnswers).length} / ${totalQ} 題</span>
+          <span>第 ${currentQuestionIndex + 1} / ${totalQ} 题</span>
+          <span style="color:#64748b; font-size:13.5px;">已作答 ${Object.keys(userAnswers).length} / ${totalQ} 题</span>
         </div>
         <div class="progress-track">
           <div class="progress-fill" style="width: ${progressPercent}%"></div>
@@ -782,8 +782,8 @@
                 if (optIdx === item.answer) cls += ' correct';
                 else if (optIdx === chosenOpt) cls += ' wrong';
               }
-              return `<button class="${cls}" ${hasAnswered ? 'disabled' : ''} onclick="selectOption('${item.id}', ${optIdx})">
-                ${String.fromCharCode(65 + optIdx)}. ${opt}
+              return `<button class="${cls}" ${hasAnswered ? 'disabled' : ''} onclick="selectOption('${item.id}',${optIdx})">
+                ${String.fromCharCode(65 + optIdx)}.${opt}
               </button>`;
             }).join('')}
           </div>
@@ -792,11 +792,11 @@
 
         <div class="action-bar">
           <button class="secondary-btn" ${currentQuestionIndex === 0 ? 'disabled' : ''} onclick="prevQuestion()">
-            ← 上一題
+            ← 上一题
           </button>
           ${currentQuestionIndex < totalQ - 1
-            ? `<button class="primary-btn" ${!hasAnswered ? 'disabled' : ''} onclick="nextQuestion()">下一題 →</button>`
-            : `<button class="primary-btn" ${!hasAnswered ? 'disabled' : ''} onclick="finishPart1()">查看成績結算</button>`
+            ? `<button class="primary-btn" ${!hasAnswered ? 'disabled' : ''} onclick="nextQuestion()">下一题 →</button>`
+            : `<button class="primary-btn" ${!hasAnswered ? 'disabled' : ''} onclick="finishPart1()">查看成绩结算</button>`
           }
         </div>
       `;
@@ -838,7 +838,7 @@
       renderPart1();
     }
 
-    // 第二大題：配對連連看
+    // 第二大题：配对连连看
     function renderPart2() {
       const tabBody = document.getElementById('tab-body');
       const levels = currentBookData.part2_matching.levels;
@@ -856,8 +856,8 @@
       tabBody.innerHTML = `
         <div class="question-card">
           <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
-            <strong style="font-size:17px; color:#17375e;">關卡 ${levelData.level} / ${levels.length}：${levelData.topic}</strong>
-            <span id="match-status" style="color:#64748b; font-size:14px; font-weight:700;">已完成 0 / ${levelData.pairs.length} 組</span>
+            <strong style="font-size:17px; color:#17375e;">关卡 ${levelData.level} / ${levels.length}：${levelData.topic}</strong>
+            <span id="match-status" style="color:#64748b; font-size:14px; font-weight:700;">已完成 0 / ${levelData.pairs.length} 组</span>
           </div>
           <div class="matching-grid">
             <div class="match-col">
@@ -877,8 +877,8 @@
           </div>
           <div class="action-bar center" id="match-next-bar" style="display:none;">
             ${currentLevelIndex < levels.length - 1
-              ? `<button class="primary-btn" onclick="nextMatchLevel()">下一關 →</button>`
-              : `<button class="primary-btn" onclick="restartMatchLevels()">全部通關！再玩一次</button>`}
+              ? `<button class="primary-btn" onclick="nextMatchLevel()">下一关 →</button>`
+              : `<button class="primary-btn" onclick="restartMatchLevels()">全部通关！再玩一次</button>`}
           </div>
         </div>
       `;
@@ -909,7 +909,7 @@
           selectedLeft.classList.add('matched');
           selectedRight.classList.add('matched');
           matchedCount++;
-          document.getElementById('match-status').textContent = `已完成 ${matchedCount} / ${totalPairs} 組`;
+          document.getElementById('match-status').textContent = `已完成 ${matchedCount} / ${totalPairs} 组`;
 
           if (matchedCount === totalPairs) {
             document.getElementById('match-next-bar').style.display = 'flex';

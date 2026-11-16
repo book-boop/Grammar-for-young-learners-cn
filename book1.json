@@ -2,7 +2,7 @@
   "bookId": 1,
   "title": "Book 1",
   "part1_review": {
-    "title": "第一大題：文法綜合測驗 (Review)",
+    "title": "第一大题：语法综合测验 (Review)",
     "singleChoice": [
       {
         "id": "b1_r_1",
@@ -156,11 +156,11 @@
     }
   },
   "part2_matching": {
-    "title": "第二大題：句型與文法配對連連看",
+    "title": "第二大题：句型与语法配对连连看",
     "levels": [
       {
         "level": 1,
-        "topic": "人稱代名詞替換",
+        "topic": "人称代词替换",
         "pairs": [
           { "left": "My name is Lucy.", "right": "I am Lucy." },
           { "left": "The elephants are big.", "right": "They are big." },
@@ -170,7 +170,7 @@
       },
       {
         "level": 2,
-        "topic": "Be 動詞疑問句與簡答",
+        "topic": "Be 动词疑问句与简答",
         "pairs": [
           { "left": "Are frogs big?", "right": "No, they are not." },
           { "left": "Is your dad a teacher?", "right": "Yes, he is." },
@@ -180,7 +180,7 @@
       },
       {
         "level": 3,
-        "topic": "名詞單數與複數變化",
+        "topic": "名词单数与复数变化",
         "pairs": [
           { "left": "one baby", "right": "three babies" },
           { "left": "one wolf", "right": "two wolves" },
@@ -190,7 +190,7 @@
       },
       {
         "level": 4,
-        "topic": "Wh- 疑問句與答句配對",
+        "topic": "Wh- 疑问句与答句配对",
         "pairs": [
           { "left": "How is your grandma?", "right": "She's fine." },
           { "left": "What are those?", "right": "They are ants." },
@@ -200,7 +200,7 @@
       },
       {
         "level": 5,
-        "topic": "Can 能力與一般現在式",
+        "topic": "Can 能力与一般现在时",
         "pairs": [
           { "left": "Can dogs fly?", "right": "No, they can't." },
           { "left": "Can Billy play basketball?", "right": "Yes, he can." },
@@ -210,7 +210,7 @@
       },
       {
         "level": 6,
-        "topic": "所有格與名詞分類",
+        "topic": "所有格与名词分类",
         "pairs": [
           { "left": "Look at that rabbit.", "right": "Its eyes are red." },
           { "left": "This is my best friend.", "right": "Her name is Lucy." },
