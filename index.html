@@ -448,6 +448,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
       gap: 12px;
       margin-top: 20px;
     }
@@ -457,7 +458,7 @@
     }
 
     .primary-btn {
-      padding: 12px 28px;
+      padding: 12px 26px;
       border-radius: 999px;
       border: none;
       background: #17375e;
@@ -477,8 +478,24 @@
       cursor: not-allowed;
     }
 
+    .accent-btn {
+      padding: 12px 26px;
+      border-radius: 999px;
+      border: none;
+      background: #2b7de9;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .accent-btn:hover {
+      opacity: 0.92;
+    }
+
     .secondary-btn {
-      padding: 11px 24px;
+      padding: 11px 22px;
       border-radius: 999px;
       border: 2px solid #cbd5e1;
       background: #ffffff;
@@ -738,10 +755,11 @@
               <span style="font-size:13px; font-weight:700; margin-top:4px;">答对题数</span>
             </div>
             <h3 style="font-size:22px; color:#17375e; margin-bottom:8px;">测验完成！</h3>
-            <p style="color:#64748b; margin-bottom:24px;">你可以重新随机抽取 10 题再练习一次，或切换到第二大题进行配对挑战。</p>
+            <p style="color:#64748b; margin-bottom:24px;">你可以重新随机抽取 10 题再练习一次，或直接进入第二大题进行配对挑战。</p>
             <div class="action-bar center">
               <button class="secondary-btn" onclick="reviewPart1Answers()">回顾作答记录</button>
               <button class="primary-btn" onclick="resetPart1()">重新抽题测验</button>
+              <button class="accent-btn" onclick="switchTab('part2')">前往第二大题 →</button>
             </div>
           </div>
         `;
@@ -782,8 +800,8 @@
                 if (optIdx === item.answer) cls += ' correct';
                 else if (optIdx === chosenOpt) cls += ' wrong';
               }
-              return `<button class="${cls}" ${hasAnswered ? 'disabled' : ''} onclick="selectOption('${item.id}',${optIdx})">
-                ${String.fromCharCode(65 + optIdx)}.${opt}
+              return `<button class="${cls}" ${hasAnswered ? 'disabled' : ''} onclick="selectOption('${item.id}', ${optIdx})">
+                ${String.fromCharCode(65 + optIdx)}. ${opt}
               </button>`;
             }).join('')}
           </div>
