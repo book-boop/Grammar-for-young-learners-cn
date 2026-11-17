@@ -1,0 +1,307 @@
+{
+  "bookId": 3,
+  "title": "Book 3",
+  "part1_review": {
+    "title": "第一大题：语法综合测验 (Review)",
+    "singleChoice": [
+      {
+        "id": "b3_r_1",
+        "question": "We went to Japan _____.",
+        "options": ["by ourselves", "by myself", "by yourselves"],
+        "answer": 0
+      },
+      {
+        "id": "b3_r_2",
+        "question": "We're going to go swimming _____.",
+        "options": ["next week", "now", "last Sunday"],
+        "answer": 0
+      },
+      {
+        "id": "b3_r_3",
+        "question": "The giant is much _____ than Jack.",
+        "options": ["bigger", "tall", "big"],
+        "answer": 0
+      },
+      {
+        "id": "b3_r_4",
+        "question": "A: How many _____ are there?  B: There are ten.",
+        "options": ["juice", "can of juice", "cans of juice"],
+        "answer": 2
+      },
+      {
+        "id": "b3_r_5",
+        "question": "Look at those dark clouds. Is it _____?",
+        "options": ["going raining", "going to rain", "will rain"],
+        "answer": 1
+      },
+      {
+        "id": "b3_r_6",
+        "question": "A: Are these your gloves?  B: No, they aren't _____. They're _____.",
+        "options": ["my; her", "mine; hers", "his; their"],
+        "answer": 1
+      },
+      {
+        "id": "b3_r_7",
+        "question": "\"Mirror, who is the _____ girl in the world?\" asked the queen.",
+        "options": ["X", "more", "most beautiful"],
+        "answer": 2
+      },
+      {
+        "id": "b3_r_8",
+        "question": "Grace is a _____ driver. She always drives _____.",
+        "options": ["careful; carefully", "carefully; careful", "careful; careful"],
+        "answer": 0
+      },
+      {
+        "id": "b3_r_9",
+        "question": "There isn't _____ orange juice in the jar.",
+        "options": ["a lot of", "a few", "many"],
+        "answer": 0
+      },
+      {
+        "id": "b3_r_10",
+        "question": "I just want _____ sugar in my tea, not too _____.",
+        "options": ["a few; many", "a little; much", "a lot of; many"],
+        "answer": 1
+      },
+      {
+        "id": "b3_r_11",
+        "question": "Those are Jill's shoes, _____?",
+        "options": ["are they", "aren't those", "aren't they"],
+        "answer": 2
+      },
+      {
+        "id": "b3_r_12",
+        "question": "These pictures _____ at the park near my school.",
+        "options": ["didn't draw", "are drawing", "were drawn"],
+        "answer": 2
+      },
+      {
+        "id": "b3_r_13",
+        "question": "They have been playing soccer _____ early evening.",
+        "options": ["since", "for", "at"],
+        "answer": 0
+      },
+      {
+        "id": "b3_r_14",
+        "question": "A: _____ you ever _____ Mount Fuji?  B: No, never.",
+        "options": ["Have; visited", "Do; visit", "Have; been"],
+        "answer": 0
+      },
+      {
+        "id": "b3_r_15",
+        "question": "I can't find my books. Can you help me find _____?",
+        "options": ["them", "they", "it"],
+        "answer": 0
+      },
+      {
+        "id": "b3_r_16",
+        "question": "Susie _____ dancing when I _____ her.",
+        "options": ["was; see", "is; saw", "was; saw"],
+        "answer": 2
+      },
+      {
+        "id": "b3_r_17",
+        "question": "He's not talking to _____. He's talking to _____.",
+        "options": ["you; she", "me; himself", "they; us"],
+        "answer": 1
+      },
+      {
+        "id": "b3_r_18",
+        "question": "The man _____ is talking to the teacher is my father.",
+        "options": ["where", "which", "who"],
+        "answer": 2
+      },
+      {
+        "id": "b3_r_19",
+        "question": "The kids were _____ to hear the story.",
+        "options": ["interesting", "shocked", "boring"],
+        "answer": 1
+      },
+      {
+        "id": "b3_r_20",
+        "question": "Jill said she _____ sick and she _____ to see a doctor.",
+        "options": ["was; had", "is; having", "was; is having"],
+        "answer": 0
+      },
+      {
+        "id": "b3_r_21",
+        "question": "Good friends won't make us _____ things that we don't want to.",
+        "options": ["to do", "do", "did"],
+        "answer": 1
+      },
+      {
+        "id": "b3_r_22",
+        "question": "[短文阅读] Dear Bobby, I'm in China. (1)_____, my family and I flew to China. Yesterday, we (2)_____ the Great Wall. It's the (3)_____ wall in the world. Tomorrow we (4)_____ to a panda zoo. I'll take pictures with the pandas. There are (5)_____ different kinds of Chinese food. I tried dumplings and fried rice. I think dumplings are (6)_____ than fried rice. Next time we can (7)_____ here together. I'll (8)_____ your tour guide. Love, Lily\n\n完形填空第 (1) 空：请选出最适合填入短文 (1)_____ 的答案",
+        "options": ["Next week", "Last week", "Tomorrow"],
+        "answer": 1
+      },
+      {
+        "id": "b3_r_23",
+        "question": "[短文阅读] Dear Bobby, I'm in China. (1)_____, my family and I flew to China. Yesterday, we (2)_____ the Great Wall. It's the (3)_____ wall in the world. Tomorrow we (4)_____ to a panda zoo. I'll take pictures with the pandas. There are (5)_____ different kinds of Chinese food. I tried dumplings and fried rice. I think dumplings are (6)_____ than fried rice. Next time we can (7)_____ here together. I'll (8)_____ your tour guide. Love, Lily\n\n完形填空第 (2) 空：请选出最适合填入短文 (2)_____ 的答案",
+        "options": ["visited", "will visit", "are visiting"],
+        "answer": 0
+      },
+      {
+        "id": "b3_r_24",
+        "question": "[短文阅读] Dear Bobby, I'm in China. (1)_____, my family and I flew to China. Yesterday, we (2)_____ the Great Wall. It's the (3)_____ wall in the world. Tomorrow we (4)_____ to a panda zoo. I'll take pictures with the pandas. There are (5)_____ different kinds of Chinese food. I tried dumplings and fried rice. I think dumplings are (6)_____ than fried rice. Next time we can (7)_____ here together. I'll (8)_____ your tour guide. Love, Lily\n\n完形填空第 (3) 空：请选出最适合填入短文 (3)_____ 的答案",
+        "options": ["long", "longer", "longest"],
+        "answer": 2
+      },
+      {
+        "id": "b3_r_25",
+        "question": "[短文阅读] Dear Bobby, I'm in China. (1)_____, my family and I flew to China. Yesterday, we (2)_____ the Great Wall. It's the (3)_____ wall in the world. Tomorrow we (4)_____ to a panda zoo. I'll take pictures with the pandas. There are (5)_____ different kinds of Chinese food. I tried dumplings and fried rice. I think dumplings are (6)_____ than fried rice. Next time we can (7)_____ here together. I'll (8)_____ your tour guide. Love, Lily\n\n完形填空第 (4) 空：请选出最适合填入短文 (4)_____ 的答案",
+        "options": ["went", "go", "are going to go"],
+        "answer": 2
+      },
+      {
+        "id": "b3_r_26",
+        "question": "[短文阅读] Dear Bobby, I'm in China. (1)_____, my family and I flew to China. Yesterday, we (2)_____ the Great Wall. It's the (3)_____ wall in the world. Tomorrow we (4)_____ to a panda zoo. I'll take pictures with the pandas. There are (5)_____ different kinds of Chinese food. I tried dumplings and fried rice. I think dumplings are (6)_____ than fried rice. Next time we can (7)_____ here together. I'll (8)_____ your tour guide. Love, Lily\n\n完形填空第 (5) 空：请选出最适合填入短文 (5)_____ 的答案",
+        "options": ["much", "many", "a lot"],
+        "answer": 1
+      },
+      {
+        "id": "b3_r_27",
+        "question": "[短文阅读] Dear Bobby, I'm in China. (1)_____, my family and I flew to China. Yesterday, we (2)_____ the Great Wall. It's the (3)_____ wall in the world. Tomorrow we (4)_____ to a panda zoo. I'll take pictures with the pandas. There are (5)_____ different kinds of Chinese food. I tried dumplings and fried rice. I think dumplings are (6)_____ than fried rice. Next time we can (7)_____ here together. I'll (8)_____ your tour guide. Love, Lily\n\n完形填空第 (6) 空：请选出最适合填入短文 (6)_____ 的答案",
+        "options": ["yummy", "yummier", "the yummiest"],
+        "answer": 1
+      },
+      {
+        "id": "b3_r_28",
+        "question": "[短文阅读] Dear Bobby, I'm in China. (1)_____, my family and I flew to China. Yesterday, we (2)_____ the Great Wall. It's the (3)_____ wall in the world. Tomorrow we (4)_____ to a panda zoo. I'll take pictures with the pandas. There are (5)_____ different kinds of Chinese food. I tried dumplings and fried rice. I think dumplings are (6)_____ than fried rice. Next time we can (7)_____ here together. I'll (8)_____ your tour guide. Love, Lily\n\n完形填空第 (7) 空：请选出最适合填入短文 (7)_____ 的答案",
+        "options": ["came", "comes", "come"],
+        "answer": 2
+      },
+      {
+        "id": "b3_r_29",
+        "question": "[短文阅读] Dear Bobby, I'm in China. (1)_____, my family and I flew to China. Yesterday, we (2)_____ the Great Wall. It's the (3)_____ wall in the world. Tomorrow we (4)_____ to a panda zoo. I'll take pictures with the pandas. There are (5)_____ different kinds of Chinese food. I tried dumplings and fried rice. I think dumplings are (6)_____ than fried rice. Next time we can (7)_____ here together. I'll (8)_____ your tour guide. Love, Lily\n\n完形填空第 (8) 空：请选出最适合填入短文 (8)_____ 的答案",
+        "options": ["be", "going to be", "am"],
+        "answer": 0
+      }
+    ],
+    "cloze": {
+      "passage": "Ben: I wish I could get the magic lamp in Aladdin. If I had (1)_____, I would make the Genie in it (2)_____ me three wishes. Ann: (3)_____ is Genie? Ben: Genie is the god (4)_____ has been living in the magic lamp for a long, long time. Ann: If you could get the magic lamp, what would you wish for? Ben: I'd wish there (5)_____ no school and no homework. Ann: Hahaha, that's an (6)_____ wish. What are the other two wishes? Ben: I wish I could play the (7)_____ video games in the world. I wish I could be the (8)_____ game player. Ann: Stop daydreaming. You should (9)_____ for your test now.",
+      "questions": [
+        {
+          "id": "b3_c_1",
+          "blankNumber": 1,
+          "options": ["ones", "them", "it"],
+          "answer": 2
+        },
+        {
+          "id": "b3_c_2",
+          "blankNumber": 2,
+          "options": ["to give", "giving", "give"],
+          "answer": 2
+        },
+        {
+          "id": "b3_c_3",
+          "blankNumber": 3,
+          "options": ["Where", "Who", "How"],
+          "answer": 1
+        },
+        {
+          "id": "b3_c_4",
+          "blankNumber": 4,
+          "options": ["who", "whose", "what"],
+          "answer": 0
+        },
+        {
+          "id": "b3_c_5",
+          "blankNumber": 5,
+          "options": ["have", "were", "aren't"],
+          "answer": 1
+        },
+        {
+          "id": "b3_c_6",
+          "blankNumber": 6,
+          "options": ["interested", "interesting", "boring"],
+          "answer": 1
+        },
+        {
+          "id": "b3_c_7",
+          "blankNumber": 7,
+          "options": ["exciting", "more exciting", "most exciting"],
+          "answer": 2
+        },
+        {
+          "id": "b3_c_8",
+          "blankNumber": 8,
+          "options": ["best", "better", "good"],
+          "answer": 0
+        },
+        {
+          "id": "b3_c_9",
+          "blankNumber": 9,
+          "options": ["study", "to study", "be studied"],
+          "answer": 0
+        }
+      ]
+    }
+  },
+  "part2_matching": {
+    "title": "第二大题：句型与语法配对连连看",
+    "levels": [
+      {
+        "level": 1,
+        "topic": "形容词比较级与最高级",
+        "pairs": [
+          { "left": "good (原级)", "right": "better -> best" },
+          { "left": "bad (原级)", "right": "worse -> worst" },
+          { "left": "expensive (原级)", "right": "more expensive -> most expensive" },
+          { "left": "hot (原级)", "right": "hotter -> hottest" }
+        ]
+      },
+      {
+        "level": 2,
+        "topic": "一般将来时与量词搭配",
+        "pairs": [
+          { "left": "What are you going to do?", "right": "I am going to cook dinner." },
+          { "left": "Will your mom and dad be home soon?", "right": "No, they won't." },
+          { "left": "How many pieces of pizza?", "right": "a few pieces of pizza" },
+          { "left": "Does Lucy have a lot of money?", "right": "No, she has a little money." }
+        ]
+      },
+      {
+        "level": 3,
+        "topic": "过去进行时句型配对",
+        "pairs": [
+          { "left": "What was Ian doing when his mom came home?", "right": "He was doing his homework." },
+          { "left": "Who were you talking to at 9:00 yesterday?", "right": "I was talking to Lucy." },
+          { "left": "Ben and Wendy (8:00 this morning)", "right": "were writing on the board." },
+          { "left": "Andy and I weren't cleaning the floor.", "right": "We were cleaning the desks." }
+        ]
+      },
+      {
+        "level": 4,
+        "topic": "现在完成时与一般过去时",
+        "pairs": [
+          { "left": "Has Zoe read the new book yet?", "right": "Yes, she has already read it." },
+          { "left": "Has she cleaned her room yet?", "right": "No, she hasn't cleaned it yet." },
+          { "left": "Have you ever been to New York?", "right": "Yes, I visited my uncle last summer." },
+          { "left": "It's 1:00, and I am hungry.", "right": "I haven't eaten lunch yet." }
+        ]
+      },
+      {
+        "level": 5,
+        "topic": "现在完成进行时与反意疑问句",
+        "pairs": [
+          { "left": "How long has Andy been talking?", "right": "since 3:30 (时间点)" },
+          { "left": "How long has Lucy been watching TV?", "right": "for two hours (时间段)" },
+          { "left": "You're from Korea,", "right": "aren't you?" },
+          { "left": "Your sister likes animals very much,", "right": "doesn't she?" }
+        ]
+      },
+      {
+        "level": 6,
+        "topic": "被动语态与关系代词",
+        "pairs": [
+          { "left": "People speak English all over the world.", "right": "English is spoken all over the world." },
+          { "left": "Ken and Lily drank milk this morning.", "right": "Milk was drunk by Ken and Lily." },
+          { "left": "Who ate the cake _____ I made?", "right": "which (指物)" },
+          { "left": "Do you see the woman _____ is standing at the door?", "right": "who (指人)" }
+        ]
+      }
+    ]
+  }
+}
