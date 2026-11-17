@@ -6,7 +6,7 @@
   <title>GRAMMAR for young learners</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;0,800;0,900;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet" />
   <style>
     * {
       box-sizing: border-box;
@@ -168,31 +168,32 @@
       border-color: #cbd5e1;
     }
 
-    /* 第二页：选书卡片（含书本缩图） */
+    /* 第二页：选书卡片（含书本缩图与简介） */
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 24px;
+      gap: 20px;
       width: 100%;
-      max-width: 820px;
+      max-width: 880px;
       margin: 44px 0;
     }
 
     .book-card {
       background: #ffffff;
       border-radius: 20px;
-      padding: 18px 20px 18px 24px;
+      padding: 18px 18px 18px 22px;
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      gap: 18px;
+      gap: 14px;
       cursor: pointer;
       position: relative;
       overflow: hidden;
       box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
       border: 2px solid transparent;
       transition: all 0.22s ease;
-      min-height: 124px;
+      min-height: 136px;
+      text-align: left;
     }
 
     .book-card::before {
@@ -201,7 +202,7 @@
       left: 0;
       top: 0;
       bottom: 0;
-      width: 10px;
+      width: 9px;
     }
 
     .card-thumb {
@@ -211,6 +212,13 @@
       object-fit: cover;
       flex-shrink: 0;
       box-shadow: 0 4px 10px rgba(15, 23, 42, 0.12);
+    }
+
+    .card-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
     }
 
     .book-card.b1 { border-color: #fed7aa; }
@@ -231,8 +239,16 @@
     }
 
     .card-title {
-      font-size: 26px;
+      font-size: 22px;
       font-weight: 900;
+      line-height: 1.1;
+    }
+
+    .card-desc {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: #475569;
+      line-height: 1.4;
     }
 
     /* 题库页面样式 */
@@ -544,10 +560,10 @@
       box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 780px) {
       .cards-grid {
         grid-template-columns: 1fr;
-        max-width: 360px;
+        max-width: 400px;
       }
       .matching-grid {
         grid-template-columns: 1fr;
@@ -589,15 +605,24 @@
       <div class="cards-grid">
         <div class="book-card b1" onclick="openBook(1)">
           <img class="card-thumb" src="./images/b1.png" alt="Book 1" />
-          <div class="card-title">Book 1</div>
+          <div class="card-info">
+            <div class="card-title">Book 1</div>
+            <div class="card-desc">Nouns, Pronouns, Be Verbs, Simple Present & Possessives</div>
+          </div>
         </div>
         <div class="book-card b2" onclick="openBook(2)">
           <img class="card-thumb" src="./images/b2.png" alt="Book 2" />
-          <div class="card-title">Book 2</div>
+          <div class="card-info">
+            <div class="card-title">Book 2</div>
+            <div class="card-desc">Present Continuous, Modals, Prepositions & Simple Past</div>
+          </div>
         </div>
         <div class="book-card b3" onclick="openBook(3)">
           <img class="card-thumb" src="./images/b3.png" alt="Book 3" />
-          <div class="card-title">Book 3</div>
+          <div class="card-info">
+            <div class="card-title">Book 3</div>
+            <div class="card-desc">Comparatives, Superlatives, Future, Present Perfect & Passive</div>
+          </div>
         </div>
       </div>
       <button class="pill-btn" onclick="goToHome()">← 回到主页</button>
