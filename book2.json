@@ -1,0 +1,307 @@
+{
+  "bookId": 2,
+  "title": "Book 2",
+  "part1_review": {
+    "title": "第一大题：语法综合测验 (Review)",
+    "singleChoice": [
+      {
+        "id": "b2_r_1",
+        "question": "Birds _____ fly, but they _____ swim.",
+        "options": ["can; can't", "can't; can", "can; can"],
+        "answer": 0
+      },
+      {
+        "id": "b2_r_2",
+        "question": "The children are _____ on the playground.",
+        "options": ["running", "runing", "runs"],
+        "answer": 0
+      },
+      {
+        "id": "b2_r_3",
+        "question": "A: What does John _____ to eat?  B: He _____ to eat meat.",
+        "options": ["likes; likes", "like; like", "like; likes"],
+        "answer": 2
+      },
+      {
+        "id": "b2_r_4",
+        "question": "A: Where _____ Leo _____ now?  B: To the hospital.",
+        "options": ["does; go", "is; going", "is; go"],
+        "answer": 1
+      },
+      {
+        "id": "b2_r_5",
+        "question": "_____ your hands before you eat.",
+        "options": ["Washes", "Wash", "Washing"],
+        "answer": 1
+      },
+      {
+        "id": "b2_r_6",
+        "question": "A: What _____ they _____?  B: Pizza.",
+        "options": ["are; eating", "is; eating", "are; eat"],
+        "answer": 0
+      },
+      {
+        "id": "b2_r_7",
+        "question": "\"_____ eat or drink on the MRT,\" says the sign.",
+        "options": ["Aren't", "Doesn't", "Don't"],
+        "answer": 2
+      },
+      {
+        "id": "b2_r_8",
+        "question": "_____ Jim and Jill walk to school every day?",
+        "options": ["Does", "Do", "Are"],
+        "answer": 1
+      },
+      {
+        "id": "b2_r_9",
+        "question": "\"Grandma doesn't _____ a big mouth and sharp teeth,\" said Little Red Riding Hood.",
+        "options": ["has", "have", "is"],
+        "answer": 1
+      },
+      {
+        "id": "b2_r_10",
+        "question": "A: Can Andy _____ trees?  B: No, he can't.",
+        "options": ["climbs", "climbing", "climb"],
+        "answer": 2
+      },
+      {
+        "id": "b2_r_11",
+        "question": "A: Are these your _____?  B: No, they're Sean's.",
+        "options": ["jacket", "sock", "jeans"],
+        "answer": 2
+      },
+      {
+        "id": "b2_r_12",
+        "question": "I need _____ cheese to make _____ cheeseburger.",
+        "options": ["a; a", "some; a", "some; some"],
+        "answer": 1
+      },
+      {
+        "id": "b2_r_13",
+        "question": "A: _____ do you like, juice or milk?  B: Juice.",
+        "options": ["What", "Which", "Where"],
+        "answer": 1
+      },
+      {
+        "id": "b2_r_14",
+        "question": "Joan's birthday is on February _____.",
+        "options": ["second", "two", "twenty-two"],
+        "answer": 0
+      },
+      {
+        "id": "b2_r_15",
+        "question": "I have two cellphones. The new _____ is a birthday gift.",
+        "options": ["it", "ones", "one"],
+        "answer": 2
+      },
+      {
+        "id": "b2_r_16",
+        "question": "You have a sore throat. You _____ eat ice cream.",
+        "options": ["should", "shouldn't", "doesn't"],
+        "answer": 1
+      },
+      {
+        "id": "b2_r_17",
+        "question": "A: Do you want to dance?  B: Yes, we _____.",
+        "options": ["do", "want", "are"],
+        "answer": 0
+      },
+      {
+        "id": "b2_r_18",
+        "question": "A: Is the school camping trip _____ July?  B: Yes, it's _____ July 5th and 6th.",
+        "options": ["in; on", "in; at", "on; on"],
+        "answer": 0
+      },
+      {
+        "id": "b2_r_19",
+        "question": "Jim _____ cook lunch, but he doesn't _____ cook dinner.",
+        "options": ["have to; have to", "has to; has to", "has to; have to"],
+        "answer": 2
+      },
+      {
+        "id": "b2_r_20",
+        "question": "My sister has _____ hair.",
+        "options": ["long straight brown", "brown straight long", "straight brown long"],
+        "answer": 0
+      },
+      {
+        "id": "b2_r_21",
+        "question": "There _____ a lot of cookies in the cookie jar yesterday. But now there aren't any.",
+        "options": ["are", "was", "were"],
+        "answer": 2
+      },
+      {
+        "id": "b2_r_22",
+        "question": "It's _____ 7:00. I often eat dinner _____ 7:00.",
+        "options": ["at; at", "X; at", "X; X"],
+        "answer": 1
+      },
+      {
+        "id": "b2_r_23",
+        "question": "We _____ camping last week because it rained heavily.",
+        "options": ["didn't went", "don't go", "didn't go"],
+        "answer": 2
+      },
+      {
+        "id": "b2_r_24",
+        "question": "She didn't _____ to work. She _____ to work.",
+        "options": ["drove; walked", "drive; walked", "drive; walks"],
+        "answer": 1
+      },
+      {
+        "id": "b2_r_25",
+        "question": "[短文阅读] A girl (1)_____ a golden ball. She drops the ball in the pond. She is crying sadly. Here comes a frog. Frog: Why are you (2)_____? Girl: My ball is in the pond. (3)_____ you get my ball back? Frog: Yes, I can. But you have to kiss me. Girl: Ummm... okay. The frog is ugly and the girl (4)_____ want to kiss him. After the girl gets (5)_____ ball, she (6)_____ home quickly. The frog is sad and angry.\n\n完形填空第 (1) 空：请选出最适合填入短文 (1)_____ 的答案",
+        "options": ["having", "have", "has"],
+        "answer": 2
+      },
+      {
+        "id": "b2_r_26",
+        "question": "[短文阅读] A girl (1)_____ a golden ball. She drops the ball in the pond. She is crying sadly. Here comes a frog. Frog: Why are you (2)_____? Girl: My ball is in the pond. (3)_____ you get my ball back? Frog: Yes, I can. But you have to kiss me. Girl: Ummm... okay. The frog is ugly and the girl (4)_____ want to kiss him. After the girl gets (5)_____ ball, she (6)_____ home quickly. The frog is sad and angry.\n\n完形填空第 (2) 空：请选出最适合填入短文 (2)_____ 的答案",
+        "options": ["crying", "cry", "cries"],
+        "answer": 0
+      },
+      {
+        "id": "b2_r_27",
+        "question": "[短文阅读] A girl (1)_____ a golden ball. She drops the ball in the pond. She is crying sadly. Here comes a frog. Frog: Why are you (2)_____? Girl: My ball is in the pond. (3)_____ you get my ball back? Frog: Yes, I can. But you have to kiss me. Girl: Ummm... okay. The frog is ugly and the girl (4)_____ want to kiss him. After the girl gets (5)_____ ball, she (6)_____ home quickly. The frog is sad and angry.\n\n完形填空第 (3) 空：请选出最适合填入短文 (3)_____ 的答案",
+        "options": ["Do", "Can", "Does"],
+        "answer": 1
+      },
+      {
+        "id": "b2_r_28",
+        "question": "[短文阅读] A girl (1)_____ a golden ball. She drops the ball in the pond. She is crying sadly. Here comes a frog. Frog: Why are you (2)_____? Girl: My ball is in the pond. (3)_____ you get my ball back? Frog: Yes, I can. But you have to kiss me. Girl: Ummm... okay. The frog is ugly and the girl (4)_____ want to kiss him. After the girl gets (5)_____ ball, she (6)_____ home quickly. The frog is sad and angry.\n\n完形填空第 (4) 空：请选出最适合填入短文 (4)_____ 的答案",
+        "options": ["don't", "doesn't", "isn't"],
+        "answer": 1
+      },
+      {
+        "id": "b2_r_29",
+        "question": "[短文阅读] A girl (1)_____ a golden ball. She drops the ball in the pond. She is crying sadly. Here comes a frog. Frog: Why are you (2)_____? Girl: My ball is in the pond. (3)_____ you get my ball back? Frog: Yes, I can. But you have to kiss me. Girl: Ummm... okay. The frog is ugly and the girl (4)_____ want to kiss him. After the girl gets (5)_____ ball, she (6)_____ home quickly. The frog is sad and angry.\n\n完形填空第 (5) 空：请选出最适合填入短文 (5)_____ 的答案",
+        "options": ["her", "his", "my"],
+        "answer": 0
+      },
+      {
+        "id": "b2_r_30",
+        "question": "[短文阅读] A girl (1)_____ a golden ball. She drops the ball in the pond. She is crying sadly. Here comes a frog. Frog: Why are you (2)_____? Girl: My ball is in the pond. (3)_____ you get my ball back? Frog: Yes, I can. But you have to kiss me. Girl: Ummm... okay. The frog is ugly and the girl (4)_____ want to kiss him. After the girl gets (5)_____ ball, she (6)_____ home quickly. The frog is sad and angry.\n\n完形填空第 (6) 空：请选出最适合填入短文 (6)_____ 的答案",
+        "options": ["run", "running", "runs"],
+        "answer": 2
+      }
+    ],
+    "cloze": {
+      "passage": "Neilson is a great basketball player. He (1)_____ basketball every day. Every morning, he gets up (2)_____ 6:00 and plays basketball with his friends. He always (3)_____ good and healthy food. He likes fruit and (4)_____. He doesn't eat junk food. He (5)_____ eats candy or ice cream. He (6)_____ milk and water, but he (7)_____ drink soda. (8)_____ tall and strong. He's really good at playing basketball.",
+      "questions": [
+        {
+          "id": "b2_c_1",
+          "blankNumber": 1,
+          "options": ["play", "plays", "playing"],
+          "answer": 1
+        },
+        {
+          "id": "b2_c_2",
+          "blankNumber": 2,
+          "options": ["in", "on", "at"],
+          "answer": 2
+        },
+        {
+          "id": "b2_c_3",
+          "blankNumber": 3,
+          "options": ["has", "have", "eat"],
+          "answer": 0
+        },
+        {
+          "id": "b2_c_4",
+          "blankNumber": 4,
+          "options": ["a meat", "meat", "meats"],
+          "answer": 1
+        },
+        {
+          "id": "b2_c_5",
+          "blankNumber": 5,
+          "options": ["usually", "often", "seldom"],
+          "answer": 2
+        },
+        {
+          "id": "b2_c_6",
+          "blankNumber": 6,
+          "options": ["drink", "drinks", "drinking"],
+          "answer": 1
+        },
+        {
+          "id": "b2_c_7",
+          "blankNumber": 7,
+          "options": ["doesn't", "don't", "isn't"],
+          "answer": 0
+        },
+        {
+          "id": "b2_c_8",
+          "blankNumber": 8,
+          "options": ["He's", "His", "He"],
+          "answer": 0
+        }
+      ]
+    }
+  },
+  "part2_matching": {
+    "title": "第二大题：句型与语法配对连连看",
+    "levels": [
+      {
+        "level": 1,
+        "topic": "现在分词 -ing 变化规则",
+        "pairs": [
+          { "left": "play / watch / sing", "right": "直接加 -ing (playing)" },
+          { "left": "drive / write / make", "right": "去 e 加 -ing (driving)" },
+          { "left": "sit / run / swim", "right": "双写尾字母加 -ing (sitting)" },
+          { "left": "The kids aren't dancing.", "right": "They're playing soccer." }
+        ]
+      },
+      {
+        "level": 2,
+        "topic": "祈使句与现在进行式对应",
+        "pairs": [
+          { "left": "Write your name here,", "right": "please." },
+          { "left": "Don't run", "right": "in the classroom." },
+          { "left": "The boy isn't writing.", "right": "He's reading a book." },
+          { "left": "The girl isn't riding her bike.", "right": "She's singing." }
+        ]
+      },
+      {
+        "level": 3,
+        "topic": "疑问句与答句配对",
+        "pairs": [
+          { "left": "Where is Jason going?", "right": "To the park." },
+          { "left": "Who wants this new book?", "right": "Henry does." },
+          { "left": "Which hat does your sister like?", "right": "The pink one." },
+          { "left": "Who is playing the drums?", "right": "Sue and Tracy are." }
+        ]
+      },
+      {
+        "level": 4,
+        "topic": "频率副词与百分比对应",
+        "pairs": [
+          { "left": "100% (总是)", "right": "always" },
+          { "left": "90% (通常)", "right": "usually" },
+          { "left": "50% (有时)", "right": "sometimes" },
+          { "left": "10% (很少)", "right": "seldom" }
+        ]
+      },
+      {
+        "level": 5,
+        "topic": "时间介词 in / on / at 搭配",
+        "pairs": [
+          { "left": "_____ September (月份)", "right": "in" },
+          { "left": "_____ November 22nd (具体日期)", "right": "on" },
+          { "left": "_____ seven o'clock (具体时刻)", "right": "at" },
+          { "left": "_____ the afternoon (下午)", "right": "in" }
+        ]
+      },
+      {
+        "level": 6,
+        "topic": "一般过去式动词变化",
+        "pairs": [
+          { "left": "study English (过去式)", "right": "studied English" },
+          { "left": "see a movie (过去式)", "right": "saw a movie" },
+          { "left": "fly a kite (过去式)", "right": "flew a kite" },
+          { "left": "drink four glasses of juice (过去式)", "right": "drank four glasses of juice" }
+        ]
+      }
+    ]
+  }
+}
