@@ -579,7 +579,7 @@
       <div class="title-group">
         <div class="title-main">GRAMMAR</div>
         <div class="title-sub">for young learners</div>
-        <div class="title-arc" id="title-arc" style="display: none;"></div>
+        <div class="title-arc" id="title-arc"></div>
       </div>
       <div class="paren">)</div>
     </header>
@@ -654,7 +654,6 @@
     function switchView(viewId) {
       document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
       document.getElementById(viewId).classList.add('active');
-      document.getElementById('title-arc').style.display = viewId === 'home-view' ? 'none' : 'block';
     }
 
     function goToHome() {
